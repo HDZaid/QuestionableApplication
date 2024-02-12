@@ -1,4 +1,4 @@
 # QuestionableApplication
- aplicacion hecha por y para los compas 
+ aplicacion hecha para los compas 
 
-para poder editar la aplicacion, se debe tener instalado Python, y las librerias para generar archivos ejecutables
+para poder editar las aplicaciones es recomendable tener instalado un IDE
