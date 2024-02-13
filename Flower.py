@@ -128,7 +128,7 @@ for i in range(16):
         if j % 2 == 0:
             color("yellow")
         else:
-            color("red")
+            color("red") 
         h += 0.005
         rt(90)
         circle(150 - j * 6, 90)
@@ -138,7 +138,7 @@ for i in range(16):
     circle(40, 24)
 
 # PARTE DEL COLOR DEL CENTRO
-
+#creo que no se guardadoron los cambios en git  
 penup()
 goto(-5, 120)
 pendown()
