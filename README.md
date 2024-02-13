@@ -1,4 +1,4 @@
 # QuestionableApplication
- aplicacion hecha por y para los compas 
+aplicaciones hechas para l@s compas, actualizare este Repositorio con algunas aplicaciones sencillas y divertidas 
 
-para poder editar la aplicacion, se debe tener instalado Python, y las librerias para generar archivos ejecutables
+para poder editar las aplicaciones es recomendable tener instalado un IDE
