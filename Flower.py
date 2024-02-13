@@ -89,18 +89,19 @@ from turtle import *
 import colorsys
 
 #parte echa con pycharm
+from turtle import *
 
 header_text = ""
 color("white")
 penup()
-goto(-180,250)
+goto(-180, 250)
 pendown()
 write(header_text, align="left", font=("Arial", 12, "normal"))
 
 speed(100)
 bgcolor("black")
 h = 0
-#PARTE DEL TALLO
+# PARTE DEL TALLO
 
 penup()
 goto(0, 100)
@@ -117,26 +118,29 @@ lt(90)
 fd(20)
 end_fill()
 
-#DIBUJA GIRASOL
+# DIBUJA GIRASOL
 
 penup()
-goto(10,120)
+goto(10, 120)
 pendown()
 for i in range(16):
     for j in range(18):
-        color("yellow ")
+        if j % 2 == 0:
+            color("yellow")
+        else:
+            color("red")
         h += 0.005
         rt(90)
-        circle(150-j*6,90)
+        circle(150 - j * 6, 90)
         lt(90)
-        circle(150-j*6, 90)
+        circle(150 - j * 6, 90)
         rt(180)
-    circle(40,24)
+    circle(40, 24)
 
-#PARTE DEL COLOR DEL CENTRO
+# PARTE DEL COLOR DEL CENTRO
 
 penup()
-goto(-5,120)
+goto(-5, 120)
 pendown()
 color("brown")
 begin_fill()
