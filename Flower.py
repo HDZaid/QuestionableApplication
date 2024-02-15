@@ -126,9 +126,11 @@ pendown()
 for i in range(16):
     for j in range(18):
         if j % 2 == 0:
-            color("yellow")
+            #puede cambiar este color por otros colores en ingles
+            color("pink")
         else:
-            color("red") 
+            #este igual, puede usar skyblue, pink, white, purple etc 
+            color("purple") 
         h += 0.005
         rt(90)
         circle(150 - j * 6, 90)
@@ -142,7 +144,7 @@ for i in range(16):
 penup()
 goto(-5, 120)
 pendown()
-color("brown")
+color("yellow")
 begin_fill()
 circle(44)
 end_fill()
