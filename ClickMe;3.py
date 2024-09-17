@@ -33,7 +33,7 @@ root.title('RESPONDEME')
 label_0 = Label(root, text= "¿QUIERES SER MI AMIG@?", bg = '#F4D03F', fg = 'black', width=0, font=("Comic Sans MS", 40))
 label_0.place(x=100, y=70)
 #inicio de los botones de la aplicacion
-my_button1 = Button(root, text="CHI UꞷU", width=7, height=1, font=("Comic Sans MS", 30), bg = '#FF4141', fg='white', command=obvio)
+my_button1 = Button(root, text="CHI ", width=7, height=1, font=("Comic Sans MS", 30), bg = '#FF4141', fg='white', command=obvio)
 my_button1.place(x=200, y=220)
 
 my_button2 = Button(root, text="ÑO", width=5, height=1, font=("Comic Sans MS", 30), bg = '#FF4141', fg='white')
