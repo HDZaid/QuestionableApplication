@@ -44,5 +44,47 @@ print(10 == 10)
 
 # CONDICIONALES------------------------------------------------------------------
 
+autorizado = False
+
+if autorizado:
+    print("autorizado")
+else:
+    print("NO esta autorizado")
+    
+
+NumeroAutorizador = 98
+
+if NumeroAutorizador == 100:
+    print("el entero es 100")
+elif NumeroAutorizador == 99:
+    print("el entero es 99")
+else:
+    print("el entero es otro numero")
+    
+
+color = "lasdjkflk"
+
+match color:
+    case "verde":
+        print("verde")
+    case "amarillo":
+        print("amarillo")
+    case _:
+        print("error")
+        
+# FUNCIONES --------------------------------------------------------------
+def sumar (primero, segundo):
+    return primero + segundo
+
+resultado = sumar(1,2)
+print(resultado)
+
+# BUCLES ------------------------------------------------------------------
+
+Animales = ("perro", "gato", "vaca")
+
+for animal in Animales:
+    print(animal)
+
 ##
 # ALGORITMOS BASICOS-------------------------------------------------------------
