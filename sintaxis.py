@@ -71,15 +71,15 @@ match color:
         print("amarillo")
     case _:
         print("error")
-        
-# FUNCIONES --------------------------------------------------------------
+
+# FUNCIONES -------------------------------------------------------------- def
 def sumar (primero, segundo):
     return primero + segundo
 
 resultado = sumar(1,2)
 print(resultado)
 
-# BUCLES ------------------------------------------------------------------
+# BUCLES ------------------------------------------------------------------ for
 
 Animales = ("perro", "gato", "vaca")
 
@@ -88,3 +88,43 @@ for animal in Animales:
 
 ##
 # ALGORITMOS BASICOS-------------------------------------------------------------
+class Persona:
+    #Se usa "__init__" para el metodo constructor de un objeto
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def saludar(self):
+        return f"Hola :U me llamo {self.nombre} y tengo {self.edad} años."
+    #"self" es el quivalente a this, en C#, y hace referencia al mismo objeto en el interprete
+
+#Lista de Personas
+personas = [
+    Persona("Juan", 25),
+    Persona("Maria", 30),
+    Persona("Carlos", 22)
+]
+
+#Busqueda Secuencial
+def BusquedaSecuencial(lista, valor):
+    for i in range(len(lista)):
+        if lista[i] == valor:
+            return i
+    return -1
+
+#Busqueda de Objetos
+def buscar_persona(lista_personas, nombre):
+    for persona in lista_personas:
+        if persona.nombre == nombre:
+            return persona
+    return None #"None" es el equivalente a default o Null en C#
+
+# Buscar una persona por su nombre
+nombre_buscado = "Maria"
+persona_encontrada = buscar_persona(personas, nombre_buscado)
+
+# Mostrar resultados
+if persona_encontrada:
+    print(persona_encontrada.saludar())
+else:
+    print(f"No hay coincidencia de la persona con el nombre {nombre_buscado}.")
